@@ -1,0 +1,16 @@
+li {
+	padding-bottom: 0.8em;
+}
+
+li.ids {
+	padding-bottom: 0.4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.ext {
+	background: url(ext.png) center right no-repeat;
+	padding-right: 12px;
+}

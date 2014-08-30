@@ -1,4 +1,3 @@
-daoyuan14.github.io
+Daoyuan's homepage
 ===================
 
-Daoyuan's homepage
