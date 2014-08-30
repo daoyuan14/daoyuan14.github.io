@@ -1,4 +1,4 @@
-Daoyuan Wu's homepage
+Daoyuan's homepage
 ===================
 
 https://daoyuan14.github.io/
