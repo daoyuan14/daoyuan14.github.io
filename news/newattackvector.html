@@ -42,7 +42,7 @@ Today we identify two new attack vectors, "accessibility" and "accessibilityTrav
 </p>
 
 <p>
-<b>Advice:</b> for end users, we suggest you not to open the accessibility services. For app developers, we believe you should invoke <u>removeJavascriptInterface("accessibility")</u> and <u>removeJavascriptInterface("accessibilityTraversal")</u> in an appropriate way to reduce its by-default attack impact.
+<b>Advice:</b> for end users, we suggest you not to open the accessibility services. For app developers, we believe you should invoke <u>removeJavascriptInterface("accessibility")</u> and <u>removeJavascriptInterface("accessibilityTraversal")</u> in an appropriate way to reduce its by-default attack impact. For Android team and ROM developers, please consider to remove such JS objects, and double check whether there are other system services can by default introduce JS interface objects into WebView components.
 </p>
 
 <p>
