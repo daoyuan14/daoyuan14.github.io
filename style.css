@@ -14,3 +14,8 @@ a.ext {
 	background: url(ext.png) center right no-repeat;
 	padding-right: 12px;
 }
+
+ul li span {
+    display: inline-block;
+    width: 120px;
+}
