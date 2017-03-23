@@ -32,9 +32,13 @@ I am now a PhD candidate at <a href="http://sis.smu.edu.sg/" target="_blank">Sch
 I am working closely with my two PhD advisors, <a href="http://flyer.sis.smu.edu.sg/" target="_blank">Prof. Debin Gao</a> and <a href="http://www.mysmu.edu/faculty/robertdeng/" target="_blank">Prof. Robert H. Deng</a>, on a number of interesting security projects.<br/>
 <br/>
 At SMU, I also get chance to collaborate with <a href="http://www.mysmu.edu/faculty/yjli/" target="_blank">Prof. Yingjiu Li</a> on Android security, and with <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank">Prof. David Lo</a> on software engineering.<br/>
-My previous MPhil advisor at HK PolyU is <a href="http://www4.comp.polyu.edu.hk/~csrchang/" target="_blank">Prof. Rocky K. C. Chang</a>, with whom I am currently working on mobile network measurement.<br/>
+My previous MPhil advisor at HK PolyU was <a href="http://www4.comp.polyu.edu.hk/~csrchang/" target="_blank">Prof. Rocky K. C. Chang</a>, with whom I am currently working on mobile network measurement.<br/>
 <br/>
-I am leading the design and implementation of <b>MopEye</b>. Please consider to try it from <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank" style="color:red">Google Play</a> for fun and for knowledge.
+I am leading the design and implementation of <b>two crowdsourcing projects</b>. Please consider to try <a href="https://play.google.com/store/apps/developer?id=University+Researchers" target="_blank" style="color:red">them</a> for fun and knowledge.
+<ul>
+<li class="ids"><img src="pics/mopeye_icon.png" height="24"> <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">MopEye</a> measures the per-app network speed, and many more (capture packets, change DNS).</li>
+<li class="ids"><img src="pics/netmon_icon.png" height="24"> <a href="https://play.google.com/store/apps/details?id=com.netmon" target="_blank">NetMon</a> scans your 3G/4G/WiFi networks, and monitors open ports in your device.</li>
+</ul>
 
 
 <!-- News -->
@@ -60,27 +64,25 @@ I am leading the design and implementation of <b>MopEye</b>. Please consider to 
 
 <!-- Papers -->
 <h2>Publications</h2>
-
 <ul>
 
 <li>
-<b>Measuring the Declared SDK Versions and Their Consistency with API Calls in Android Apps</b>. [<a href="papers/WASA17_DSDK.pdf">Paper</a> | <a href="https://arxiv.org/abs/1702.04872">arXiv</a> | <a href="https://twitter.com/dao0x/status/832432200180117506">Twitter Link</a>]
+<b>MopEye: Opportunistic Monitoring of Per-app Mobile Network Performance</b>. [<a href="https://arxiv.org/abs/1703.07551" target="_blank">Technical Report</a> | <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">@GPlay</a> | <a href="https://www.facebook.com/mopeye/" target="_blank">@Facebook</a> | <a href="https://twitter.com/mopeye_app" target="_blank">@Twitter</a>]
+<br /><u>Daoyuan Wu</u>, Rocky K. C. Chang, Weichao Li, Eric K. T. Cheng, and Debin Gao.
+<br />This is a technical report currently under peer review. An earlier <a href="https://arxiv.org/abs/1610.01282" target="_blank">poster version</a> was published in December 1, 2015.
+</li>
+
+<li>
+<b>Measuring the Declared SDK Versions and Their Consistency with API Calls in Android Apps</b>. [<a href="papers/WASA17_DSDK.pdf">Paper</a> | <a href="https://arxiv.org/abs/1702.04872" target="_blank">arXiv</a> | <a href="https://twitter.com/dao0x/status/832432200180117506">Twitter Link</a>]
 <br /><u>Daoyuan Wu</u>, Ximing Liu, Jiayun Xu, David Lo, and Debin Gao.
 <br /><a href="http://wasa-conference.org/WASA2017/" target="_blank">International Conference on Wireless Algorithms, Systems, and Applications (WASA) 2017</a>, Guilin, China. (AR = 71/238 = 29.8%)
 <br />It is originally a course project paper done by the first three authors in Apr 2016.
 </li>
 
 <li>
-<b>SecComp: Towards Practically Defending Against Component Hijacking in Android Applications</b>. [<a href="https://arxiv.org/abs/1609.03322">Technical Report</a>]
+<b>SecComp: Towards Practically Defending Against Component Hijacking in Android Applications</b>. [<a href="https://arxiv.org/abs/1609.03322" target="_blank">Technical Report</a>]
 <br /><u>Daoyuan Wu</u>, Debin Gao, Yingjiu Li, and Robert H. Deng.
 <br />A significantly improved version is currently under peer review. It is originally a course project paper, which I finished in Nov 2015.
-</li>
-
-<li>
-<b>MopEye: Monitoring Per-app Network Performance with Zero Measurement Traffic</b>. [<a href="papers/CoNEXT15_Poster_MopEye.pdf">Poster</a> | <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank" style="color:red">@Google Play</a> | <a href="https://www.facebook.com/mopeye/" target="_blank">@Facebook</a>]
-<br /><u>Daoyuan Wu</u>, Weichao Li, Rocky K. C. Chang, and Debin Gao.
-<br /><a href="http://conferences2.sigcomm.org/co-next/2015/#!/studentposters" target="_blank">CoNEXT Student Workshop 2015</a>, in conjunction with <a href="http://conferences2.sigcomm.org/co-next/2015/#!/home" target="_blank">CoNEXT 2015</a>, Heidelberg, Germany.
-<br />The full version is currently under the peer review of USENIX ATC 2017.
 </li>
 
 <li>
@@ -92,7 +94,7 @@ I am leading the design and implementation of <b>MopEye</b>. Please consider to 
 </li>
 
 <li>
-<b>Analyzing Android Browser Apps for file:// Vulnerabilities</b>. [<a href="papers/ISC14_FileCross.pdf">Paper</a> (<a href="http://link.springer.com/chapter/10.1007%2F978-3-319-13257-0_20">official</a>, <a href="http://arxiv.org/abs/1404.4553">full</a>) | <a href="slides/ISC14_FileCross.pptx">Slides</a> | <a href="https://sites.google.com/site/androidfilecross/">Homepage</a>]
+<b>Analyzing Android Browser Apps for file:// Vulnerabilities</b>. [<a href="papers/ISC14_FileCross.pdf">Paper</a> (<a href="http://link.springer.com/chapter/10.1007%2F978-3-319-13257-0_20">official</a>, <a href="http://arxiv.org/abs/1404.4553" target="_blank">full</a>) | <a href="slides/ISC14_FileCross.pptx">Slides</a> | <a href="https://sites.google.com/site/androidfilecross/">Homepage</a>]
 <br /><u>Daoyuan Wu</u> and Rocky K. C. Chang.
 <br /><a href="http://isc14.ie.cuhk.edu.hk/" target="_blank">Information Security Conference (ISC) 2014</a>, Hong Kong, China. (Full paper AR = 20/106 = 18.9%)
 </li>
@@ -120,15 +122,25 @@ I am leading the design and implementation of <b>MopEye</b>. Please consider to 
 <br /><u>Daoyuan Wu</u>, Xiapu Luo, and Rocky K. C. Chang.
 <br />
 [
-<a href="http://arxiv.org/abs/1405.6282">Technical report</a>
+<a href="http://arxiv.org/abs/1405.6282" target="_blank">Technical report</a>
 | <a href="https://github.com/daoyuan14/VSinkDataset">VSink dataset</a>
 | <a href="https://github.com/daoyuan14/ComponentHijackingExploit">Vulnerable APKs and Demo exploits</a>
 ]
 <br />An old technical report. I don't have time to revise it anymore.
 </li>
-
 </ul>
 
+<!-- Posters -->
+<h2>Posters</h2>
+<ul>
+
+<li>
+<b>MopEye: Monitoring Per-app Network Performance with Zero Measurement Traffic</b>. [<a href="papers/CoNEXT15_Poster_MopEye.pdf">Poster</a> | <a href="https://arxiv.org/abs/1610.01282" target="_blank">arXiv</a> | <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">@GPlay</a> | <a href="https://www.facebook.com/mopeye/" target="_blank">@Facebook</a> | <a href="https://twitter.com/mopeye_app" target="_blank">@Twitter</a>]
+<br /><u>Daoyuan Wu</u>, Weichao Li, Rocky K. C. Chang, and Debin Gao.
+<br /><a href="http://conferences2.sigcomm.org/co-next/2015/#!/studentposters" target="_blank">CoNEXT Student Workshop 2015</a>, in conjunction with <a href="http://conferences2.sigcomm.org/co-next/2015/#!/home" target="_blank">CoNEXT 2015</a>, Heidelberg, Germany.
+</li>
+
+</ul>
 
 <h2>Mentoring Experience</h2>
 <ul>
@@ -154,8 +166,8 @@ I am leading the design and implementation of <b>MopEye</b>. Please consider to 
 <br />Daoyuan Wu.
 <br />
 [
-<a href="http://www.slideshare.net/daoyuan0x/chv-exploit-hitcon-38299593">Slides</a>
-| <a href="https://github.com/daoyuan14/ComponentHijackingExploit">Codes</a>
+<a href="http://www.slideshare.net/daoyuan0x/chv-exploit-hitcon-38299593" target="_blank">Slides</a>
+| <a href="https://github.com/daoyuan14/ComponentHijackingExploit" target="_blank">Codes</a>
 ]
 <br /><a href="http://hitcon.org/2014/agenda/" target="_blank">HitCon 2014</a>, Taiwan.
 </li>
@@ -188,14 +200,14 @@ I am leading the design and implementation of <b>MopEye</b>. Please consider to 
 <ul>
 <li class="ids">Gmail: daoyuan0x</li>
 <li class="ids">
-<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/w/Wu:Daoyuan">DBLP</a> | 
-<a href="http://scholar.google.com/citations?user=WtO-bN8AAAAJ&hl=en">Google Scholar</a>
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/w/Wu:Daoyuan" target="_blank">DBLP</a> | 
+<a href="http://scholar.google.com/citations?user=WtO-bN8AAAAJ&hl=en" target="_blank">Google Scholar</a>
 </li>
 <li class="ids">
-<a href="https://twitter.com/dao0x">Twitter</a> | 
-<a href="https://www.linkedin.com/in/daoyuan">LinkedIn</a> | 
-<a href="https://github.com/daoyuan14/">GitHub</a> |
-<a href="http://www.slideshare.net/daoyuan0x/">SlideShare</a>
+<a href="https://twitter.com/dao0x" target="_blank">Twitter</a> | 
+<a href="https://www.linkedin.com/in/daoyuan" target="_blank">LinkedIn</a> | 
+<a href="https://github.com/daoyuan14/" target="_blank">GitHub</a> |
+<a href="http://www.slideshare.net/daoyuan0x/" target="_blank">SlideShare</a>
 </li>
 </ul>
 
