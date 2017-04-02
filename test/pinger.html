@@ -36,13 +36,6 @@
                 document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
         }
 
-        xhr.onerror = function() {
-                if(count + START_PORT <= END_PORT){
-                    ping(count++ + START_PORT)
-                }
-                document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
-        }
-
         xhr.send();
         return false;
     }
