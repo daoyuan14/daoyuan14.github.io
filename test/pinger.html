@@ -13,23 +13,28 @@
         var url = HOST + ':' + port + '/ping';
         xhr.open("GET", url, true);
 
-        xhr.onreadystatechange = function() {
-            var state = xhr.readyState
-            if(state == 4) {
+        xhr.onload = function() {
                 if(xhr.status != 0)
                     document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
-                        + '<tr><td>' + port + '</td><td>' + xhr.status + '</td></tr>\n';
+                        + '<tr><td>' + port + '</td><td>' + xhr.status + 'Load</td></tr>\n';
                 if(count + START_PORT <= END_PORT){
                     ping(count++ + START_PORT)
                 }
                 document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
-            }
+        }
+
+        xhr.timeout = 1000;
+        xhr.ontimeout = function() {
+                if(xhr.status != 0)
+                    document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
+                        + '<tr><td>' + port + '</td><td>' + xhr.status + 'TimeOut</td></tr>\n';
+                if(count + START_PORT <= END_PORT){
+                    ping(count++ + START_PORT)
+                }
+                document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
         }
 
         xhr.onerror = function() {
-                if(xhr.status != 0)
-                    document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
-                        + '<tr><td>' + port + '</td><td>' + xhr.status + 'Error</td></tr>\n';
                 if(count + START_PORT <= END_PORT){
                     ping(count++ + START_PORT)
                 }
