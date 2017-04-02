@@ -14,7 +14,8 @@
         xhr.open("GET", url, true);
 
         xhr.onreadystatechange = function() {
-            if(xhr.readyState == 4) {
+            var state = xhr.readyState
+            if(state == 4 || state == 3) {
                 if(xhr.status != 0)
                     document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
                         + '<tr><td>' + port + '</td><td>' + xhr.status + '</td></tr>\n';
