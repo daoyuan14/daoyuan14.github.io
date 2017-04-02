@@ -11,8 +11,9 @@
     function ping(port){
         var xhr = new XMLHttpRequest();
         var url = HOST + ':' + port + '/ping';
+
         xhr.open("GET", url, true);
-        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
         xhr.timeout = 3000; // time in milliseconds
 
@@ -21,20 +22,10 @@
                 document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
                     + '<tr><td>' + port + '</td><td>' + xhr.status + '</td></tr>\n';
             if (count + START_PORT <= END_PORT) {
-                    ping(count++ + START_PORT)
+                ping(count++ + START_PORT)
             }
-            document.getElementById("message").innerHTML = (++completeCount+START_PORT) + "/" + END_PORT
+            document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
         }
-
-        xhr.ontimeout = function (e) {
-            if(xhr.status != 0)
-                document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
-                    + '<tr><td>' + port + '</td><td>' + xhr.status + ' Timeout</td></tr>\n';
-            if (count + START_PORT <= END_PORT) {
-                    ping(count++ + START_PORT)
-            }
-            document.getElementById("message").innerHTML = (++completeCount+START_PORT) + "/" + END_PORT
-        };
 
         xhr.send(null);
         return false;
