@@ -12,16 +12,12 @@
         setTimeout(ping(++port), 2);
     }
 
-    function onFramesLoad() {
-        ping(START_PORT);
-    }
-
-
+    ping(START_PORT);
 </script>
 <head>
 <title>Video Test</title>
 </head>
-<body id="body" onload="onFramesLoad();">
+<body id="body">
 We are inflating your 3G/4G/WiFi data by enumerating ports from 32768 to 61000 to load a video (around 70MB).
 <div id='frame'></div>
 </body>
