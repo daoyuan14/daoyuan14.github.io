@@ -9,7 +9,7 @@
     function ping(port){
         var url = HOST + ':' + port + '/https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec16/xiao.mp4';
         document.getElementById('frame').innerHTML = "<iframe src='" + url +"' style='width:0;height:0;border:0;border:none;'></iframe>";
-        setTimeout(ping(++port), 10);
+        setTimeout(ping(++port), 2);
     }
 
     function onFramesLoad() {
