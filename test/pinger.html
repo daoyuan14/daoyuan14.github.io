@@ -9,22 +9,23 @@
     var END_PORT = 61000;
 
     function ping(port){
-        var http = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest();
         var url = HOST + ':' + port + '/ping';
-        http.open("GET", url, true);
-        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        http.onreadystatechange = function() {//Call a function when the state changes.
-            if(http.readyState == 4) {
-                //if(http.status != 0)
+        xhr.open("GET", url, true);
+
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4) {
+                if(xhr.status != 0)
                     document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
-                        + '<tr><td>' + port + '</td><td>' + http.status + '</td></tr>\n';
+                        + '<tr><td>' + port + '</td><td>' + xhr.status + '</td></tr>\n';
                 if(count + START_PORT <= END_PORT){
                     ping(count++ + START_PORT)
                 }
-                document.getElementById("message").innerHTML = (++completeCount+START_PORT) + "/" + END_PORT
+                document.getElementById("message").innerHTML = (++completeCount + START_PORT) + "/" + END_PORT
             }
         }
-        http.send('');
+
+        xhr.send();
         return false;
     }
 
