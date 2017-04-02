@@ -14,7 +14,7 @@
         xhr.open("GET", url, true);
 
         xhr.onload = function() {
-            if (xhr.readyState === 4) {
+            if (xhr.readyState == 4) {
                 if(xhr.status != 0)
                     document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
                         + '<tr><td>' + port + '</td><td>' + xhr.status + 'Load</td></tr>\n';
@@ -25,11 +25,7 @@
             }
         }
 
-        xhr.timeout = 10;
-        xhr.ontimeout = function() {
-                if(xhr.status != 0)
-                    document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
-                        + '<tr><td>' + port + '</td><td>' + xhr.status + 'TimeOut</td></tr>\n';
+        xhr.onerror = function() {
                 if(count + START_PORT <= END_PORT){
                     ping(count++ + START_PORT)
                 }
