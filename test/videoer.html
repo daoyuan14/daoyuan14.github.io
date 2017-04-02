@@ -19,7 +19,7 @@
                     document.getElementById("result_table").innerHTML = document.getElementById("result_table").innerHTML
                         + '<tr><td>' + port + '</td><td>' + http.status + '</td></tr>\n';
                 if(count + START_PORT <= END_PORT){
-                    ping(count++ + START_PORT)
+                    setTimeout(ping(count++ + START_PORT), 100);
                 }
                 document.getElementById("message").innerHTML = (++completeCount+START_PORT) + "/" + END_PORT
             }
