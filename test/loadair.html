@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Load AirDroid</title>
+</head>
+
+<iframe src="http://10.4.8.200:8888/"></iframe>
+
+<script>
+
+window.onload = new function(){
+
+setTimeout(function(){
+var perfData = window.performance.timing;
+
+//console.log(perfData);
+
+var connectTime = perfData.connectEnd - perfData.connectStart;
+var requestTime = perfData.responseEnd - perfData.requestStart;
+var totalLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+
+var d = document;
+
+//d.body.appendChild(d.createTextNode(" connectBeg:" +perfData.connectStart));
+//d.body.appendChild(d.createTextNode(" connectEnd:" +perfData.connectEnd));
+d.body.appendChild(d.createTextNode(" connectTime:" +connectTime));
+
+//d.body.appendChild(d.createTextNode(" requestBeg:"+perfData.requestStart));
+//d.body.appendChild(d.createTextNode(" responseEnd:" +perfData.responseEnd));
+d.body.appendChild(d.createTextNode(" requestTime:" +requestTime));
+
+//d.body.appendChild(d.createTextNode(" navigationBeg:"+perfData.navigationStart));
+//d.body.appendChild(d.createTextNode(" loadEventEnd:"+perfData.loadEventEnd));
+d.body.appendChild(d.createTextNode(" totalLoadTime:"+totalLoadTime));
+}, 20000);
+}
+
+</script>
+</html>
