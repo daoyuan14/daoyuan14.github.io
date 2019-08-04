@@ -47,11 +47,11 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#advisories">Advisories</a></li>
+            <li><a href="#areas">Areas</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#techreports">Reports</a></li>
-            <li><a href="#talks">Talks</a></li>
-            <li><a href="#mentoring">Mentoring</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#collabrators">Collabrators</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#links">Links</a></li>
           </ul>
@@ -112,7 +112,7 @@
         </div>
 
         <hr size="2" color="#800000">
-        <h2><b><a id="projects">Research Areas</a></b></h2>
+        <h2><b><a class="anchor" id="areas"></a><a>Research Areas</a></b></h2>
 
         <ul>
 <li>
@@ -147,7 +147,8 @@
         </ul>
 
         <hr size="1" color="#800000">
-        <h2><b><a id="publications">Publications</a></b></h2>
+
+        <h2><b><a class="anchor" id="publications"></a><a>Publications</a></b></h2>
 
         <h3>Conference Papers</h3>
 
@@ -158,7 +159,7 @@
 
                 <tr>
                     <td>
-                        <a class="anchor" name="asiaccs19"></a>
+                        <a class="anchor" id="asiaccs19"></a>
                         <span class="label label-primary">C12</span>
                     </td>
                     <td>
@@ -514,14 +515,13 @@
         <h3>Technical Reports</h3>
 
         <div class="panel panel-default">
-            <!--<div class="panel-body">-->
             <table class="table table-hover">
                 <tbody>
 
                 <tr>
                     <a class="anchor" id="conext15poster"></a>
                     <td>
-                        <span class="label label-primary">T2</span>
+                        <span class="label label-primary">R2</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -538,7 +538,7 @@
                         </p>
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/1610.01282">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs">Slides</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/CoNEXT15_Poster_MopEye.pdf">Poster</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/CoNEXT15_Poster_MopEye.pdf">Paper</a></button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://mopeye.github.io/">Website</a></button>
                         <p></p>
                     </td>
@@ -547,7 +547,7 @@
                 <tr>
                     <a class="anchor" id="arXiv14"></a>
                     <td>
-                        <span class="label label-primary">T1</span>
+                        <span class="label label-primary">R1</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -562,10 +562,11 @@
                         An old technical report in 2014. I don't have time to revise it anymore.
                         <br>
                         </p>
-                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://github.com/daoyuan14/ComponentHijackingExploit">AppExploit</a></button>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="http://arxiv.org/abs/1405.6282">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs">Slides</button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="http://arxiv.org/abs/1405.6282">Paper</a></button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/daoyuan14/VSinkDataset">Dataset</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/daoyuan14/ComponentHijackingExploit">Exploit</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -573,6 +574,178 @@
                 </tbody>
             </table>
         </div>
+
+        <h3>Invited Talks</h3>
+
+        <div class="panel panel-default">
+            <table class="table table-hover">
+                <tbody>
+
+                <tr>
+                    <a class="anchor" id="talk19cuhk"></a>
+                    <td>
+                        <span class="label label-primary">T4</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Boosting Android Security through App-, Network-, and System-level Vulnerability Analysis</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://www.ie.cuhk.edu.hk/research/seminar_archive.shtml">CUHK Seminar '19</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        In Department of Information Engineering, The Chinese University of Hong Kong, Hong Kong SAR, China, March 2019.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Information</a></button>
+                        <button type="button" class="btn btn-info btn-xs">Slides</button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <a class="anchor" id="talk19hkbu"></a>
+                    <td>
+                        <span class="label label-primary">T3</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>On-device Crowdsourcing and Bytecode Search for Advancing Android App Analysis</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://www.ie.cuhk.edu.hk/research/seminar_archive.shtml">HKBU Seminar '19</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        In Department of Computer Science, Hong Kong Baptist University, Hong Kong SAR, China, January 2019.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://www.comp.hkbu.edu.hk/v1/?page=seminars&id=500">Information</a></button>
+                        <button type="button" class="btn btn-info btn-xs">Slides</button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <a class="anchor" id="talk17hitcon"></a>
+                    <td>
+                        <span class="label label-primary">T2</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Cross-Platform Analysis of Indirect File Leaks in Android and iOS Applications</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://hitcon.org/2017/pacific/">HitCon Pacific '17</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        In Hacks in Taiwan Conference, Taipei, Taiwan, China, December 2017.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://hitcon.org/2017/pacific/speaker.html">Information</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank" href="https://hitcon.org/2017/pacific/0composition/pdf/Day2/R2/R2-5.12.8.pdf">Slides</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <a class="anchor" id="talk14hitcon"></a>
+                    <td>
+                        <span class="label label-primary">T1</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>On the Feasibility of Automatically Generating Android Component Hijacking Exploits</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="http://hitcon.org/2014/">HitCon '14</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        In Hacks in Taiwan Conference, Taipei, Taiwan, China, August 2014.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="http://hitcon.org/2014/agenda/">Information</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank" href="http://www.slideshare.net/daoyuan0x/chv-exploit-hitcon-38299593">Slides</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/daoyuan14/ComponentHijackingExploit">Code</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <hr size="1" color="#800000">
+        <h2><b><a class="anchor" id="students"></a><a>Students</a></b></h2>
+        <h3></h3>
+        <h4>
+        <ul>
+<li>
+<p>
+PhD Students: <a target="_blank" href="https://yixiao5428.github.io/">Xiao Yi</a> (at CUHK from 2019 to present).
+</p>
+</li>
+
+<li>
+<p>
+Master Students: Shiwei Zhang (at SUSTech in 2018 for <a href="#iwqos19">IWQoS'19</a>), and Lingzhi Qiu (at NUPT in 2014 for <a target="_blank" href="papers/ICC15_AppTrace.pdf">ICC'15</a>).
+</p>
+</li>
+
+<li>
+<p>
+Undergraduate Students: Zixiong Zhang (at NUPT in 2014 for <a target="_blank" href="papers/ICC15_AppTrace.pdf">ICC'15</a>).
+</p>
+</li>
+        </ul>
+        </h4>
+
+        <hr size="1" color="#800000">
+        <h2><b><a class="anchor" id="collabrators"></a><a>Collabrators</a></b></h2>
+        <h3></h3>
+        <h4>
+        <ul>
+<li>
+<p>
+SMU: <a href="http://flyer.sis.smu.edu.sg/" target="_blank">Debin Gao</a> (my PhD advisor), <a href="http://www.mysmu.edu/faculty/robertdeng/" target="_blank">Robert H. Deng</a> (my PhD co-advisor), <a href="http://www.mysmu.edu/faculty/yjli/" target="_blank">Yingjiu Li</a>, <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank">David Lo</a>, and <a href="http://www.mysmu.edu/faculty/lxjiang/" target="_blank">Lingxiao Jiang</a>.
+</p>
+</li>
+
+<li>
+<p>
+PolyU: <a href="http://www4.comp.polyu.edu.hk/~csrchang/" target="_blank">Rocky K. C. Chang</a> (my MPhil advisor), <a href="https://dblp.uni-trier.de/pers/hd/c/Cheng:Eric_K=_T=" target="_blank">Eric K. T. Cheng</a>, and <a href="http://www4.comp.polyu.edu.hk/~csxluo/" target="_blank">Xiapu Luo</a>.
+</p>
+</li>
+
+<li>
+<p>
+Others: <a href="http://www.ms509.com/" target="_blank">En He</a> (at OPPO), <a href="https://liweichao.github.io/" target="_blank">Weichao Li</a> (at SUSTech), <a href="http://rmok.pw/" target="_blank">Ricky K. P. Mok</a> (at UCSD), and <a href="https://sites.google.com/site/ychengsite" target="_blank">Yao Cheng</a> (at Huawei).
+</p>
+</li>
+        </ul>
+        </h4>
+
+        <hr size="1" color="#800000">
+        <h2><b><a class="anchor" id="links"></a><a>Useful Links</a></b></h2>
+        <h3></h3>
+      <h4>
+      <ul>
+          <li><p>My calendar of security conferences: <a href="http://www.wikicfp.com/cfp/servlet/event.showlist?sortby=1&lownerid=35309&ltype=w&page=1" target="_blank">academia</a> and <a href="/industry.html">industry</a>.</p></li>
+          <li><p>I am maintaining <a href="thinking.html">a list of interesting computer security papers</a> and <a href="appse.html">a list of mobile app related software engineering papers</a>.</p></li>
+          <li><p>Security Journals: <a href="http://www.signalprocessingsociety.org/publications/periodicals/forensics/" target="_blank">TIFS</a> (<a href="http://www.signalprocessingsociety.org/publications/special-issues-2/#ifsissues" target="_blank">special issues</a>), <a href="http://www.computer.org/web/tdsc" target="_blank">TDSC</a> (<a href="http://www.computer.org/web/computingnow/cfps/journals#tdsc" target="_blank">special issues</a>), <a href="http://www.journals.elsevier.com/computers-and-security/" target="_blank">Computers & Security</a> (<a href="http://www.journals.elsevier.com/computers-and-security/call-for-papers/" target="_blank">special issues</a>), <a href="http://tissec.acm.org/" target="_blank">TISSEC</a> and <a href="http://www.iospress.nl/journal/journal-of-computer-security/" target="_blank">JCS</a>.</p></li>
+          <li><p>Network Journals: <a href="http://www.ifp.illinois.edu/ton/" target="_blank">TON</a>, <a href="http://www.comsoc.org/jsac/call-papers" target="_blank">JSAC</a>, <a href="http://www.computer.org/web/tmc" target="_blank">TMC</a>.</p></li>
+          <li><p><a href="http://rcpce.engl.polyu.edu.hk/RACorpus/advanced.htm" target="_blank">PolyU's Corpus of Research Articles</a></p></li>
+          <li><p><a href="elos.pdf" target="_blank">The Elements of Style (by Strunk and White)</a></p></li>
+          <li><p><a href="http://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html" target="_blank">Writing a technical paper (by Michael Ernst)</a></p></li>
+          <li><p><a href="http://greatresearch.org/2013/10/11/storytelling-101-writing-tips-for-academics/" target="_blank">Storytelling 101: Writing Tips for Academics (by Nick Feamster)</a></p></li>
+          <li><p><a href="http://faculty.cs.tamu.edu/guofei/sec_conf_stat.htm" target="_blank">Computer Security Conference Ranking and Statistic (by Guofei Gu)</a></p></li>
+          <li><p><a href="http://jianying.space/conference-ranking.html" target="_blank">Top Crypto and Security Conferences Ranking (by Jianying Zhou)</a></p></li>
+          <li><p><a href="http://www.cs.cornell.edu/andru/csconf.html" target="_blank">Top Publication Venues in Computer Science (by Andrew Myers)</a></p></li>
+          <li><p>ArnetMiner CS Rank: <a href="https://aminer.org/ranks/conf" target="_blank">conference rank</a> and <a href="https://aminer.org/ranks/org" target="_blank">organization rank</a>.</p></li>
+          <li><p>CCF Conference and Journal Rankings: <a href="http://www.ccf.org.cn/xspj/wlyxxaq/" target="_blank">Security</a>, <a href="http://www.ccf.org.cn/xspj/jsjwl/" target="_blank">Networking</a>, <a href="http://www.ccf.org.cn/jsjtxjgbxyfbjsccxt/" target="_blank">System</a>, and <a href="http://www.ccf.org.cn/xspj/rjgc/xtrj/cxsjyy/" target="_blank">Software Engineering</a>.</p></li>
+          <li><p>Google Scholar Metrics in <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_computersecuritycryptography" target="_blank">Computer Security</a>, <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_computingsystems" target="_blank">Computing Systems</a>, <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_computernetworkswirelesscommunication" target="_blank">Computer Networks</a>, and <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_softwaresystems" target="_blank">Software Systems</a>.</p></li>
+          <li><p><a href="https://infosec-conferences.com/" target="_blank">Industry Cybersecurity Conference Directory</a>, <a href="https://seclab.skku.edu/publications/events/" target="_blank">SKKU seclab | Upcoming Events</a>, and <a href="http://www.ieee-security.org/CFP/Cipher-Call-for-Papers.html" target="_blank">Cipher Call-for-papers</a>.</p></li>
+      </ul>
+      </h4>
 
    </div>
 </div><!--/.container-->
