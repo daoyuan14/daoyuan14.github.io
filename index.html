@@ -120,7 +120,7 @@
         <ul>
 <li>
 <p>
-<b>Static Mobile Security Analysis</b>: XXX Tool (soon), <a href="#ndss19">OPTool</a> [NDSS'19], <a href="#arXiv1912">DSDK Inconsistency</a> [WASA'17], <a href="#icisc15">Native Code Stack</a> [ICISC'15], and <a href="#arXiv1405">ECVDetector</a> [arXiv'14].
+<b>Static Mobile Security Analysis</b>: <a href="#arXiv2005">BackDroid</a> [arXiv'20], <a href="#ndss19">OPTool</a> [NDSS'19], <a href="#arXiv1912">DSDK Inconsistency</a> [WASA'17], <a href="#icisc15">Native Code Stack</a> [ICISC'15], and <a href="#arXiv1405">ECVDetector</a> [arXiv'14].
 </p>
 </li>
 
@@ -138,7 +138,7 @@
 
 <li>
 <p>
-<b>Network Component Auditing</b>: <a href="#tr1908">VoIP Fuzzing</a> (technical report).
+<b>Network Component Auditing</b>: <a href="#dimva20">VoIP Fuzzing</a> [DIMVA'20; 8 Google Bug Bounties].
 </p>
 </li>
 
@@ -165,6 +165,33 @@
             <!--<div class="panel-body">-->
             <table class="table table-hover">
                 <tbody>
+
+                <tr>
+                    <td>
+                        <a class="anchor" id="dimva20"></a>
+                        <span class="label label-primary">C13</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Understanding Android VoIP Security: A System-level Vulnerability Assessment</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://dimva2020.campus.ciencias.ulisboa.pt/">DIMVA '20</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        En He, <u>Daoyuan Wu</u>*, and Robert H. Deng
+                        <br>
+                        <i>We discovered and reported 8 zero-day vulnerabilities in Android VoIP system components. Google acknowledged us with 8 bug bounties.</i>
+                        <br>
+                        In Proc. Springer Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA), Lisboa, Portugal, 2020.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs">Publisher</button>
+                        <button type="button" class="btn btn-info btn-xs">Slides</button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/DIMVA20_AndroVoIP.pdf">Paper</a></button>
+                        <p></p>
+                    </td>
+                </tr>
 
                 <tr>
                     <td>
@@ -529,8 +556,33 @@
 
                 <tr>
                     <td>
-                        <a class="anchor" id="arXiv1912"></a>
+                        <a class="anchor" id="arXiv2005"></a>
                         <span class="label label-primary">R4</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>When Program Analysis Meets Bytecode Search: Targeted and Efficient Inter-procedural Analysis of Modern Android Apps in BackDroid</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://arxiv.org/abs/2005.11527">arXiv '20</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        <u>Daoyuan Wu</u>, Debin Gao, Robert H. Deng, and Rocky K. C. Chang
+                        <br>
+                        We started programming BackDroid since December 2015. I will keep leading this search-based static analysis project and make it an impactful work.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2005.11527">Publisher</a></button>
+                        <button type="button" class="btn btn-info btn-xs">Slides</button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/pdf/2005.11527.pdf">Paper</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a class="anchor" id="arXiv1912"></a>
+                        <span class="label label-primary">R3</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -548,31 +600,6 @@
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/1912.12982">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs">Slides</button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/1912.12982">Paper</a></button>
-                        <p></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a class="anchor" id="tr1908"></a>
-                        <span class="label label-primary">R3</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                        <b>Understanding Android VoIP Security: A System-level Vulnerability Assessment</b>
-                        <span class="badge">
-                            <a class="conf">TR'19</a>
-                        </span>
-                        </h4>
-                        <p class="author">
-                        En He, <u>Daoyuan Wu</u>*, and Robert H. Deng
-                        <br>
-                        (*: corresponding author) This technical report from CUHK has been online since 26 August 2019.
-                        <br>
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs">Publisher</button>
-                        <button type="button" class="btn btn-info btn-xs">Slides</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/TR19_VoIPFuzzing.pdf">Paper</a></button>
                         <p></p>
                     </td>
                 </tr>
