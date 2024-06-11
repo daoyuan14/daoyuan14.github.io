@@ -109,21 +109,21 @@
         <div id="about">
             <p class="lead">I am currently a Research Assistant Professor (PhD Supervisor, with duties including grant application and teaching) at HKUST CSE. I work closely with <a href="https://www.cse.ust.hk/~shuaiw/" target="_blank">Prof. Shuai Wang</a> and his students. Prior to joining HKUST, I was a Senior Research Fellow at <a target="_blank" href="https://www.ntu.edu.sg/scse">Nanyang Technological University (NTU)</a> for one year, working with <a target="_blank" href="https://personal.ntu.edu.sg/yangliu/">Prof. Yang Liu</a> on LLM-driven Web3 Security. Before that, I spent six months as a Senior Researcher at Huawei Hong Kong Research Centre and three years as a Research Assistant Professor in the <a target="_blank" href="https://www.ie.cuhk.edu.hk/main/index.shtml">Department of Information Engineering</a>, <a target="_blank" href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong (CUHK)</a>. I also served as an <a target="_blank" href="http://www.ie.cuhk.edu.hk/people/dywu.shtml">Adjunct Assistant Professor</a> at CUHK IE from 2022 to 2023. Before CUHK, I earned Ph.D. in 2019 from <a href="http://www.smu.edu.sg/" target="_blank">Singapore Management University (SMU)</a> in the <a href="http://scis.smu.edu.sg/" target="_blank">School of Computing and Information Systems</a>. My PhD study was generously supported by the <a href="https://smc.smu.edu.sg/" target="_blank">Secure Mobile Center (SMC)</a> PhD Scholarship (the only awardee; plus that GRE was wavied). Before pursuing my PhD, I received M.Phil. from <a href="http://www.comp.polyu.edu.hk" target="_blank">Department of Computing</a> at <a href="http://www.polyu.edu.hk" target="_blank">The Hong Kong Polytechnic University</a> in 2015 and B.E. from <a href="http://cs.njupt.edu.cn/" target="_blank">Department of Information Security</a> at <a href="http://www.njupt.edu.cn/" target="_blank">Nanjing University of Posts and Telecommunications</a> in 2011.</p>
 
-            <p class="lead">My research focuses on three areas: (i) Large X (language, vision, binary, etc.) Models and AI Security, (ii) Blockchain and FinTech Security, and (iii) Mobile and Software Security. Over the years, I have made the following representative works:</p>
+            <p class="lead">My research focuses on three areas: (i) Large Language Model and AI Security, (ii) Blockchain and FinTech Security, and (iii) Mobile and Software Security. Over the years, I have made the following representative works:</p>
         <ul>
 <li>
 <p>
-RAG4Sec: the first to exploit the concept of RAG for cybersecurity tasks, including <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24] for vulnerability detection (via summarized knowledge), <a href="#arXiv2405">PropertyGPT</a> [arXiv'24] for formal verification (via example-based ICL), and more.
+RAG4Sec: the first to exploit the concept of RAG or its variant for cybersecurity tasks, including <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24] for vulnerability detection (via summarized knowledge), <a href="#arXiv2405">PropertyGPT</a> [arXiv'24] for formal verification (via example-based ICL), <a href="#arXiv2403-2">ACFix</a> [arXiv'24] for vulnerability repair (via mined common practice), and more.
 </p>
 </li>
 <li>
 <p>
-<a href="#dsn21">BackDroid</a>: proposing a very creative search-based technique, <a href="https://github.com/VPRLab/BackDroid" target="_blank"><b>on-the-fly bytecode search</b></a>, to address a fundamental limitation in Android app analysis. It enables usage in <a href="#ndss19">Open Ports</a> [NDSS'19], <a href="#emse21">DSDK</a> [EMSE'21, WASA'17], and <a href="#eurosp24">MtdScout</a> [EuroS&P'24].
+<a target="_blank" href="https://gptscan.github.io/">GPTScan</a>: the first <a href="#icse24-2">work</a> [ICSE'24] to deeply connect LLM with static analysis, opening door to sound LLM-based code analysis.
 </p>
 </li>
 <li>
 <p>
-<a href="#icse24-2">GPTScan</a>: the first work to deeply connect LLM with static analysis, opening the door to LLM-based smart contract analysis.
+<a href="#arXiv2406">SelfDefend</a>: the first generic LLM jailbreak defense framework that allows LLMs to defend themselves in a practical manner.
 </p>
 </li>
 <li>
@@ -133,7 +133,12 @@ RAG4Sec: the first to exploit the concept of RAG for cybersecurity tasks, includ
 </li>
 <li>
 <p>
-<a href="#atc17">MopEye</a>: the first non-intrusive crowdsourcing app <img src="pics/mopeye_icon.png" height="24"> <a href="https://mopeye.github.io/" target="_blank"><b>MopEye</b></a> for security and networking research, leading to further work on <a href="#conext16">AcuteMon</a> [CoNEXT'16], <a href="#wisec18">UpDroid</a> [WiSec'18], <a href="#iwqos19">MopEye Dataset</a> [IWQoS'19], <a href="#ndss19">NetMon</a> [NDSS'19], and <a href="#tii21">SideNet</a> [TII'21].
+<a href="#dsn21">BackDroid</a>: proposing a very creative search-based technique, <a href="https://github.com/VPRLab/BackDroid" target="_blank"><b>on-the-fly bytecode search</b></a>, to address a fundamental limitation in Android app analysis. It enables usage in <a href="#ndss19">Open Ports</a> [NDSS'19], <a href="#emse21">DSDK</a> [EMSE'21, WASA'17], and <a href="#eurosp24">MtdScout</a> [EuroS&P'24].
+</p>
+</li>
+<li>
+<p>
+<a href="#atc17">MopEye</a>: the first non-intrusive crowdsourcing app <img src="pics/mopeye_icon.png" height="24"> <a href="https://mopeye.github.io/" target="_blank"><b>MopEye</b></a> [ATC'17] for security and networking research, leading to further work on <a href="#conext16">AcuteMon</a> [CoNEXT'16], <a href="#wisec18">UpDroid</a> [WiSec'18], <a href="#iwqos19">MopEye Dataset</a> [IWQoS'19], <a href="#ndss19">NetMon</a> [NDSS'19], and <a href="#tii21">SideNet</a> [TII'21].
 </p>
 </li>
 <li>
@@ -158,16 +163,16 @@ A pioneering contribution to Android Component security (<a href="https://www4.c
         <ul>
 <li>
 <p>
-<b>Large X Models and AI Security</b>: <i>Large X Models for Pervasive Cybersecurity; Security of LLMs and AI</i>.<br>
+<b>Large Language Models and AI Security</b>: <i>LLMs for Pervasive Cybersecurity; LLM Security; AI Safety</i>.<br>
 <a href="#icse24-2">GPTScan</a> [ICSE'24],
 <a href="#icse24-1">LLMImitation</a> [ICSE'24],
+<a href="#arXiv2406">SelfDefend</a> [arXiv'24],
 <a href="#arXiv2405">PropertyGPT</a> [arXiv'24],
 <a href="#arXiv2404-2">PDoctor</a> [arXiv'24],
 <a href="#arXiv2404-1">MLM4VDLTest</a> [arXiv'24],
 <a href="#arXiv2403-3">iAudit</a> [arXiv'24],
 <a href="#arXiv2403-2">ACFix</a> [arXiv'24],
 <a href="#arXiv2403-1">PTM4AWI</a> [arXiv'24],
-<a href="#arXiv2402">SelfDefend</a> [arXiv'24],
 <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24],
 <a href="#arXiv2312-2">VRPTEST</a> [arXiv'23],
 <a href="#arXiv2312-1">AWISurvey</a> [arXiv'23],
@@ -184,7 +189,7 @@ and <a href="#wisec18">UpDroid</a> [WiSec'18].
 <a href="#usenix24">ZepScope</a> [USENIX'24],
 <a href="#issta23">SoMo</a> [ISSTA'23],
 and <a href="#fse22">MineBlockVuln</a> [FSE'22].
-One more work is under review.
+Four works are under review.
 </p>
 </li>
 
@@ -262,7 +267,10 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         </p>
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs">CCF A</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">Paper</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/UsenixSec24_ZepScope.pdf">Paper</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://zepscope.github.io/">Website</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/Code">Code</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/Datasets">Dataset</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -315,9 +323,10 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <button type="button" class="btn btn-info btn-xs">CCF A</button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/ICSE24_GPTScan.pdf">Paper</a></button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2308.03314">arXiv2308</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://sites.google.com/view/gptscan">Website</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/MetaTrustLabs/GPTScan">Code</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://www.cointime.ai/@MetaTrustLabs/metatrust-27054">Press</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://gptscan.github.io/">Website</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/GPTScan/GPTScan">Code</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/MetaTrustLabs/GPTScan">Dataset</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://www.cointime.ai/@MetaTrustLabs/metatrust-27054">Press</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -371,7 +380,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <button type="button" class="btn btn-info btn-xs">CCF A</button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/ISSTA23_SoMo.pdf">Paper</a></button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/VPRLab/SoMo">Code</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://www.cointime.com/news/somo-38715">Press</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://www.cointime.com/news/somo-38715">Press</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -507,7 +516,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank" href="slides/DSN21_BackDroid_pdfSlides.pdf">CCF B (Slides)</a></button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/DSN21_BackDroid.pdf">Paper</a></button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2005.11527">arXiv2105</a></button>
-                        <button type="button" class="btn btn-danger btn-xs">Representative</button>
+                        <button type="button" class="btn btn-danger btn-xs">My Favourite</button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/VPRLab/BackDroid">Code</a></button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://www.youtube.com/watch?v=9gS_uIMd7-w">Video</a></button>
                         <p></p>
@@ -971,6 +980,31 @@ I am also interested in network and Internet measurement, blockchain-based decen
 
                 <tr>
                     <td>
+                        <a class="anchor" id="arXiv2406"></a>
+                        <span class="label label-primary">R16</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://arxiv.org/abs/2406.05498">arXiv '24</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        Xunguang Wang, <u>Daoyuan Wu</u>*, Zhenlan Ji, Zongjie Li, Pingchuan Ma, Shuai Wang*, Yingjiu Li, Yang Liu, Ning Liu, Juergen Rahmel
+                        <br>
+                        This article completes its earlier <a href="#arXiv2402">vision paper</a>.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">Slides</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2406.05498">arXiv2406</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
                         <a class="anchor" id="arXiv2405"></a>
                         <span class="label label-primary">R15</span>
                     </td>
@@ -982,7 +1016,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         </span>
                         </h4>
                         <p class="author">
-                        Ye Liu, Yue Xue,  <u>Daoyuan Wu</u>*, Yuqiang Sun, Yi Li, Miaolei Shi, and Yang Liu
+                        Ye Liu, Yue Xue, <u>Daoyuan Wu</u>*, Yuqiang Sun, Yi Li, Miaolei Shi, and Yang Liu
                         </p>
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">Slides</a></button>
