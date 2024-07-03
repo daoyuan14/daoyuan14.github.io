@@ -109,8 +109,8 @@
         <div id="about">
             <p class="lead">I am currently a Research Assistant Professor (PhD Supervisor, with duties including grant application and teaching) at HKUST CSE. I work closely with <a href="https://www.cse.ust.hk/~shuaiw/" target="_blank">Prof. Shuai Wang</a> and his students. Prior to joining HKUST, I was a Senior Research Fellow at <a target="_blank" href="https://www.ntu.edu.sg/scse">Nanyang Technological University (NTU)</a> for one year, working with <a target="_blank" href="https://personal.ntu.edu.sg/yangliu/">Prof. Yang Liu</a> on LLM-driven Web3 Security. Before that, I spent six months as a Senior Researcher at Huawei Hong Kong Research Centre and three years as a Research Assistant Professor in the <a target="_blank" href="https://www.ie.cuhk.edu.hk/main/index.shtml">Department of Information Engineering</a>, <a target="_blank" href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong (CUHK)</a>. I also served as an <a target="_blank" href="http://www.ie.cuhk.edu.hk/people/dywu.shtml">Adjunct Assistant Professor</a> at CUHK IE from 2022 to 2023. Before CUHK, I earned Ph.D. in 2019 from <a href="http://www.smu.edu.sg/" target="_blank">Singapore Management University (SMU)</a> in the <a href="http://scis.smu.edu.sg/" target="_blank">School of Computing and Information Systems</a>. My PhD study was generously supported by the <a href="https://smc.smu.edu.sg/" target="_blank">Secure Mobile Center (SMC)</a> PhD Scholarship (the only awardee; plus that GRE was wavied). Before pursuing my PhD, I received M.Phil. from <a href="http://www.comp.polyu.edu.hk" target="_blank">Department of Computing</a> at <a href="http://www.polyu.edu.hk" target="_blank">The Hong Kong Polytechnic University</a> in 2015 and B.E. from <a href="http://cs.njupt.edu.cn/" target="_blank">Department of Information Security</a> at <a href="http://www.njupt.edu.cn/" target="_blank">Nanjing University of Posts and Telecommunications</a> in 2011.</p>
 
-            <p class="lead">My research focuses on three areas: (i) Large Language Model and AI Security, (ii) Blockchain and FinTech Security, and (iii) Mobile and Software Security. Over the years, I have made the following representative works:</p>
-        <ul>
+<p class="lead">My research focuses on three areas: (i) Large Language Model and AI Security, (ii) Blockchain and FinTech Security, and (iii) Mobile and Software Security. Over the years, I have made the following representative works:</p>
+<ul>
 <li>
 <p>
 RAG4Sec: the first to exploit the concept of RAG or its variant for cybersecurity tasks, including <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24] for vulnerability detection (via GPT-summarized knowledge), <a href="#arXiv2405">PropertyGPT</a> [arXiv'24] for formal verification (via example-based ICL), <a href="#arXiv2403-2">ACFix</a> [arXiv'24] for vulnerability repair (via mined common practice), and more.
@@ -128,6 +128,11 @@ RAG4Sec: the first to exploit the concept of RAG or its variant for cybersecurit
 </li>
 <li>
 <p>
+Tune4Sec: customized tuning for cybersecurity tasks, including <a href="#icse25-1">iAudit</a> [ICSE'25] by combining fine-tuning and LLM agents, <a href="#icse24-1">LLMImitation</a> [ICSE'24] for code model imitation, <a href="#arXiv2403-1">PTM4AWI</a> [arXiv'24] for Actionable Warning Identification (AWI), and more.
+</p>
+</li>
+<li>
+<p>
 <a href="#ndss23">BlockScope</a>: a search-based patch vs. code similarity analysis <a href="#ndss23">tool</a> [NDSS'23] for discovering over 100 vulnerabilities in top blockchains, including Dogecoin (the new CVE-2021-37491), Binance's BSC Chain (a bug bounty), and Optimism/Base/Mantle.
 </p>
 </li>
@@ -138,7 +143,7 @@ AC4Web3: the first to study access control issues in <a href="#usenix24">OpenZep
 </li>
 <li>
 <p>
-<a href="#dsn21">BackDroid</a>: proposing a very creative search-based technique, <a href="https://github.com/VPRLab/BackDroid" target="_blank"><b>on-the-fly bytecode search</b></a>, to address a fundamental limitation in Android app analysis. It enables usage in <a href="#ndss19">Open Ports</a> [NDSS'19], <a href="#emse21">DSDK</a> [EMSE'21, WASA'17], and <a href="#eurosp24">MtdScout</a> [EuroS&P'24].
+<a href="#dsn21">BackDroid</a>: proposing a creative search-based CG technique, <a href="https://github.com/VPRLab/BackDroid" target="_blank"><b>on-the-fly bytecode search</b></a>, to address a fundamental limitation in Android app analysis. It enables usage in <a href="#ndss19">Open Ports</a> [NDSS'19], <a href="#eurosp24">MtdScout</a> [EuroS&P'24], and <a href="#emse21">DSDK</a> [EMSE'21, WASA'17].
 </p>
 </li>
 <li>
@@ -170,12 +175,12 @@ A pioneering contribution to Android Component security (<a href="https://www4.c
 <p>
 <b>Large Language Models and AI Security</b>: <i>LLMs for Pervasive Cybersecurity; LLM Security; AI Safety</i>.<br>
 <a href="#icse24-2">GPTScan</a> [ICSE'24],
+<a href="#icse25-1">iAudit</a> [ICSE'25],
 <a href="#icse24-1">LLMImitation</a> [ICSE'24],
 <a href="#arXiv2406">SelfDefend</a> [arXiv'24],
 <a href="#arXiv2405">PropertyGPT</a> [arXiv'24],
 <a href="#arXiv2404-2">PDoctor</a> [arXiv'24],
 <a href="#arXiv2404-1">MLM4VDL</a> [arXiv'24],
-<a href="#arXiv2403-3">iAudit</a> [arXiv'24],
 <a href="#arXiv2403-2">ACFix</a> [arXiv'24],
 <a href="#arXiv2403-1">PTM4AWI</a> [arXiv'24],
 <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24],
@@ -200,25 +205,24 @@ Four works are under review.
 
 <li>
 <p>
-<b>Mobile and Software Security</b>: <i>static/dynamic/vulnerability/malware/privacy analysis; Rust/edgeAI security</i>.<br>
+<b>Mobile and Software Security</b>: <i>static/dynamic/vulnerability/malware/privacy analysis; Rust/EdgeAI security</i>.<br>
 <a href="#dsn21">BackDroid</a> [DSN'21],
-<a href="#eurosp24">MtdScout</a> [EuroS&P'24],
 <a href="#ndss19">Insecure Open Ports</a> [NDSS'19],
+<a href="#eurosp24">MtdScout</a> [EuroS&P'24],
+<a href="#emse21">DSDK Inconsistency</a> [EMSE'21, WASA'17],
 <a href="#dimva20">VoIP Fuzzing</a> [DIMVA'20],
 <a href="#talk21blackhat">Insecure PendingIntents</a> [Blackhat Europe'21],
 <a href="#raid21">IABI Usability Insecurity</a> [RAID'21],
 <a href="#asiaccs19">MineAndroVuln</a> [AsiaCCS'19],
+<a href="#codaspy18">SCLib</a> [CODASPY'18],
 <a href="#most15">Remote Webview Attacks</a> [MoST'15],
 <a href="#isc14">Local Webview File:// Attack</a> [ISC'14],
-<a href="#emse21">DSDK Inconsistency</a> [EMSE'21, WASA'17],
-<a href="#codaspy18">SCLib</a> [CODASPY'18],
 <a href="#raid22">LiCA</a> [RAID'22],
 <a href="#tdsc21">App Repackaging</a> [TDSC'21],
 <a href="#icisc15">Native Stack</a> [ICISC'15],
 and
 <a href="#arXiv1405">ECVDetector</a> [arXiv'14].
-<br>
-My recent focuses are Rust/edgeAI security; privacy/policy studies, the latter in collaboration with <a href="https://scholars.cityu.edu.hk/en/persons/ning-liu(d81d8e3f-5be3-4301-8017-f5e1da8cf72c).html" target="_blank">my wife</a>. <font color="red">Looking for students!</font>
+My recent focus in this area includes Rust/EdgeAI security and privacy/policy studies, the latter in collaboration with <a href="https://scholars.cityu.edu.hk/en/persons/ning-liu(d81d8e3f-5be3-4301-8017-f5e1da8cf72c).html" target="_blank">my wife</a>. <font color="red">We are looking for students!</font>
 </p>
 </li>
 
@@ -254,6 +258,32 @@ I am also interested in network and Internet measurement, blockchain-based decen
 
                 <tr>
                     <td>
+                        <a class="anchor" id="icse25-1"></a>
+                        <span class="label label-primary">P28</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Combining Fine-Tuning and LLM-based Agents for Intuitive Smart Contract Auditing with Justifications</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://conf.researchr.org/home/icse-2025">ICSE '25</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        Wei Ma, <u>Daoyuan Wu</u>*, Yuqiang Sun, Tianwen Wang, Shangqing Liu, Jian Zhang, Yue Xue, and Yang Liu
+                        <br>
+                        To appear in ACM SIGSOFT International Conference on Software Engineering (ICSE), Ottawa, Ontario, Canada, 2025.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">CCF A</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2403.16073">arXiv2403</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://sites.google.com/view/iaudittool/home">Website</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
                         <a class="anchor" id="usenix24"></a>
                         <span class="label label-primary">P27</span>
                     </td>
@@ -274,8 +304,8 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <button type="button" class="btn btn-info btn-xs">CCF A</button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="papers/UsenixSec24_ZepScope.pdf">Paper</a></button>
                         <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://zepscope.github.io/">Website</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/Code">Code</a></button>
-                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/Datasets">Dataset</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/ZepScope-Code">Code</a></button>
+                        <button type="button" class="btn btn-warning btn-xs"><a class="conf" target="_blank" href="https://github.com/ZepScope/ZepScope-Datasets">Dataset</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -321,7 +351,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <p class="author">
                         Yuqiang Sun, <u>Daoyuan Wu</u>*, Yue Xue, Han Liu, Haijun Wang, Zhengzi Xu, Xiaofei Xie, and Yang Liu
                         <br>
-                        To appear in ACM SIGSOFT International Conference on Software Engineering (ICSE), Lisbon, Portugal, 2024.
+                        In ACM SIGSOFT International Conference on Software Engineering (ICSE), Lisbon, Portugal, 2024.
                         <br>
                         </p>
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://conf.researchr.org/details/icse-2024/icse-2024-research-track/114/GPTScan-Detecting-Logic-Vulnerabilities-in-Smart-Contracts-by-Combining-GPT-with-Pro">Publisher</a></button>
@@ -351,7 +381,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <p class="author">
                         Zongjie Li, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang*, <u>Daoyuan Wu</u>*, Cuiyun Gao, and Yang Liu
                         <br>
-                        To appear in ACM SIGSOFT International Conference on Software Engineering (ICSE), Lisbon, Portugal, 2024.
+                        In ACM SIGSOFT International Conference on Software Engineering (ICSE), Lisbon, Portugal, 2024.
                         <br>
                         </p>
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank" href="https://conf.researchr.org/details/icse-2024/icse-2024-research-track/87/On-Extracting-Specialized-Code-Abilities-from-Large-Language-Models-A-Feasibility-St">Publisher</a></button>
@@ -405,6 +435,8 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <p class="author">
                         Xiao Yi, Yuzhou Fang, <u>Daoyuan Wu</u>*, and Lingxiao Jiang
                         <br>
+                        In Proc. ISOC Network and Distributed System Security Symposium (NDSS), San Diego, USA, 2023.
+                        <br>
                         One of the top 13 papers directly accepted over 581 submissions. In this paper, we discovered over 100 vulnerabilities in top blockchains.
                         <br>
                         </p>
@@ -431,6 +463,8 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         </h4>
                         <p class="author">
                         Xiao Yi, <u>Daoyuan Wu</u>*, Lingxiao Jiang, Yuzhou Fang, Kehuan Zhang, and Wei Zhang
+                        <br>
+                        In ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), Singapore, 2022.
                         <br>
                         The first systematic study about system-level blockchain vulnerabilities, in which we performed the file-, text-, and code-level analysis. 
                         <br>
@@ -986,7 +1020,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                 <tr>
                     <td>
                         <a class="anchor" id="arXiv2406"></a>
-                        <span class="label label-primary">R16</span>
+                        <span class="label label-primary">R15</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -1011,7 +1045,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                 <tr>
                     <td>
                         <a class="anchor" id="arXiv2405"></a>
-                        <span class="label label-primary">R15</span>
+                        <span class="label label-primary">R14</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -1033,7 +1067,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                 <tr>
                     <td>
                         <a class="anchor" id="arXiv2404-2"></a>
-                        <span class="label label-primary">R14</span>
+                        <span class="label label-primary">R13</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -1055,7 +1089,7 @@ I am also interested in network and Internet measurement, blockchain-based decen
                 <tr>
                     <td>
                         <a class="anchor" id="arXiv2404-1"></a>
-                        <span class="label label-primary">R13</span>
+                        <span class="label label-primary">R12</span>
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
@@ -1070,28 +1104,6 @@ I am also interested in network and Internet measurement, blockchain-based decen
                         <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
                         <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">Slides</a></button>
                         <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2404.13945">arXiv2404</a></button>
-                        <p></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a class="anchor" id="arXiv2403-3"></a>
-                        <span class="label label-primary">R12</span>
-                    </td>
-                    <td>
-                        <h4 class="list-group-item-heading">
-                        <b>Combining Fine-Tuning and LLM-based Agents for Intuitive Smart Contract Auditing with Justifications</b>
-                        <span class="badge">
-                            <a class="conf" target="_blank" href="https://arxiv.org/abs/2403.16073">arXiv '24</a>
-                        </span>
-                        </h4>
-                        <p class="author">
-                        Wei Ma, <u>Daoyuan Wu</u>*, Yuqiang Sun, Tianwen Wang, Shangqing Liu, Jian Zhang, Yue Xue, and Yang Liu
-                        </p>
-                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
-                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">Slides</a></button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/abs/2403.16073">arXiv2403</a></button>
                         <p></p>
                     </td>
                 </tr>
@@ -1590,8 +1602,8 @@ Research Assistants:
 <li>
 <p>
 <a target="_blank" href="https://github.com/fan-14">Yufan Chen</a> (at SMU since Oct 2023, co-advised with Prof. Debin Gao),
-<a target="_blank" href="https://www.linziyu.me/">Ziyu Lin</a> (at SMU since May 2024, co-advised with Prof. Ximeng Liu and Prof. Robert Deng),
-<a target="_blank" href="https://www.snakin.top/">Zhiwei Lin</a> (at NUS since May 2024, co-advised with Prof. Shuai Wang),
+<a target="_blank" href="https://www.linziyu.me/">Ziyu Lin</a> (at SMU since June 2024, co-advised with Prof. Ximeng Liu and Prof. Robert Deng),
+<a target="_blank" href="https://www.snakin.top/">Zhiwei Lin</a> (at NUS since June 2024, co-advised with Prof. Shuai Wang),
 <a target="_blank" href="https://kwyangg.github.io/">Kaiwen Yang</a> (at HKUST since Jul 2024, co-advised with Prof. Shuai Wang).
 </p>
 </li>
@@ -1609,7 +1621,7 @@ Undergraduate Students:
         <ul>
 <li>
 <p>
-<a target="_blank" href="https://github.com/yan5ui">Zimo Ji</a> (at HKUST since May 2024, co-advised with Prof. Shuai Wang).
+<a target="_blank" href="https://github.com/yan5ui">Zimo Ji</a> (at HKUST since May 2024, co-advised with Prof. Shuai Wang), <a target="_blank">Yuyang Gu</a> (at HKUST since June 2024, co-advised with Prof. Shuai Wang).
 </p>
 </li>
 <li>
