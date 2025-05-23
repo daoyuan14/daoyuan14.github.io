@@ -113,7 +113,7 @@
 <ul>
 <li>
 <p>
-RAG4Sec: the first to exploit the concept of RAG or its variant for cybersecurity tasks, including <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24] for vulnerability detection (via GPT-summarized knowledge), <a href="#ndss25">PropertyGPT</a> [NDSS'25] for formal verification (via example-based ICL), <a href="#arXiv2403-2">ACFix</a> [arXiv'24] for vulnerability repair (via mined common practice), and more [accepted by CCS'25].
+RAG4Sec: the first to exploit the concept of RAG or its variant for cybersecurity tasks, including <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24] for vulnerability detection (via GPT-summarized knowledge), <a href="#ndss25">PropertyGPT</a> [NDSS'25] for formal verification property generation (via example-based ICL), <a href="#ccs25-2">CTFAgent</a> [CCS'25] for CTF (via GPT-summarized knowledge), <a href="#arXiv2403-2">ACFix</a> [arXiv'24] for vulnerability repair (via mined common practice), and more.
 </p>
 </li>
 <li>
@@ -175,11 +175,12 @@ A pioneering contribution to Android Component security (<a href="https://www4.c
 <p>
 <b>Large Language Model and AI Security</b>: <i>LLMs for Cybersecurity; Security of LLMs; AI Safety</i>.<br>
 <u>AI/LLM4Sec</u>:
-<a href="#ndss25">PropertyGPT</a> [NDSS'25, 🏆],
+<a href="#ccs25-2">CTFAgent</a> [CCS'25],
 <a href="#usenix25-1">G2Fuzz</a> [USENIX'25],
-<a href="#icse24-2">GPTScan</a> [ICSE'24],
+<a href="#ndss25">PropertyGPT</a> [NDSS'25, 🏆],
 <a href="#icse25-1">iAudit</a> [ICSE'25],
 <a href="#issta25">DecLLM</a> [ISSTA'25],
+<a href="#icse24-2">GPTScan</a> [ICSE'24],
 <a href="#csur24">ML4AWI</a> [CSUR'24],
 <a href="#tii21">SideNet</a> [TII'21],
 <a href="#arXiv2401">LLM4Vuln</a> [arXiv'24],
@@ -188,6 +189,7 @@ and
 <a href="#arXiv2403-1">PTM4AWI</a> [arXiv'24].
 <br/>
 <u>AI/LLM-Sec</u>:
+<a href="#ccs25-1">FinetuneDataExtraction</a> [CCS'25],
 <a href="#usenix25-2">SelfDefend</a> [USENIX'25],
 <a href="#icse25-2">HEDiff</a> [ICSE'25],
 <a href="#icse24-1">LLMImitation</a> [ICSE'24],
@@ -222,7 +224,7 @@ and
 <a href="#DLT24">AGChain</a> [DLT'24].
 <br/>
 <u>Consensus</u>:
-An ongoing work supported by a Blockchain Academic Research Award.
+An ongoing work supported by a Blockchain Academic Research Award 🏆.
 <br/>
 <u>Contracts</u>:
 <a href="#usenix24">ZepScope</a> [USENIX'24]
@@ -239,9 +241,9 @@ LLM-related are listed above.
 <p>
 <b>Mobile and Software Security</b>: <i>static/dynamic/vulnerability/malware/privacy analysis; Rust/EdgeAI security</i>.<br>
 <u>Mobile</u>:
+<a href="#eurosp24">MtdScout</a> [EuroS&P'24],
 <a href="#dsn21">BackDroid</a> [DSN'21; very creative tech, taking years of R&D],
 <a href="#ndss19">Insecure Open Ports</a> [NDSS'19],
-<a href="#eurosp24">MtdScout</a> [EuroS&P'24],
 <a href="#emse21">DSDK Inconsistency</a> [EMSE'21, WASA'17],
 <a href="#talk21blackhat">Insecure PendingIntents</a> [Blackhat Europe'21],
 <a href="#raid21">IABI Usability Insecurity</a> [RAID'21],
@@ -282,6 +284,54 @@ I am also interested in measuring mobile network performance and web privacy lea
             <!--<div class="panel-body">-->
             <table class="table table-hover">
                 <tbody>
+
+                <tr>
+                    <td>
+                        <a class="anchor" id="ccs25-2"></a>
+                        <span class="label label-primary">P41</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://www.sigsac.org/ccs/CCS2025/">CCS '25</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        Zimo Ji, <u>Daoyuan Wu</u>*, Wenyuan Jiang, Pingchuan Ma, Zongjie Li, and Shuai Wang*
+                        <br>
+                        To appear in ACM Conference on Computer and Communications Security (CCS), Taipei, 2025.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">CCF A</a></button>
+                        <p></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a class="anchor" id="ccs25-1"></a>
+                        <span class="label label-primary">P40</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                        <b>Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs</b>
+                        <span class="badge">
+                            <a class="conf" target="_blank" href="https://www.sigsac.org/ccs/CCS2025/">CCS '25</a>
+                        </span>
+                        </h4>
+                        <p class="author">
+                        Zongjie Li, <u>Daoyuan Wu</u>*, Shuai Wang*, and Zhendong Su
+                        <br>
+                        To appear in ACM Conference on Computer and Communications Security (CCS), Taipei, 2025.
+                        <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs"><a class="conf" target="_blank">Publisher</a></button>
+                        <button type="button" class="btn btn-info btn-xs"><a class="conf" target="_blank">CCF A</a></button>
+                        <p></p>
+                    </td>
+                </tr>
 
                 <tr>
                     <td>
